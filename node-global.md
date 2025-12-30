@@ -29,3 +29,7 @@ console.log(__dirname);
 console.log(__filename);
 // 输出: /Users/your-username/your-project/index.ts
 ```
+
+## process
+
+它提供与当前进程相关的信息和控制方法。
