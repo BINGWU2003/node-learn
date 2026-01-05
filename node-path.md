@@ -95,3 +95,36 @@ const dirname = path.dirname(__filename);
 console.log(dirname === __dirname);
 // 输出: true
 ```
+
+## path.basename()
+
+用于获取文件名。
+
+```typescript
+import path from "path";
+// 场景：你有一个文件的完整路径
+const filePath = "/Users/me/project/src/utils/format.ts";
+
+const name = path.basename(filePath);
+
+console.log(name);
+// 输出: format.ts
+
+// 第二个参数告诉它：把 .ts 切掉
+const nameWithoutExt = path.basename(filePath, ".ts");
+
+console.log(nameWithoutExt);
+// 输出: format
+```
+
+## path.extname()
+
+用于获取文件扩展名。
+
+```typescript
+import path from "path";
+const filePath = "/Users/me/project/src/utils/format.ts";
+const ext = path.extname(filePath);
+console.log(ext);
+// 输出: .ts
+```
