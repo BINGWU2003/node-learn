@@ -6,6 +6,8 @@ path 是 Node.js 中的一个全局对象，它提供与路径相关的操作方
 
 用于拼接路径，返回一个拼接后的相对路径。
 
+文档：https://nodejs.org/api/path.html#pathjoinpaths
+
 ```typescript
 import path from "path";
 const fullPath = path.join("users", "admin", "files");
@@ -23,6 +25,8 @@ Mac/Linux 使用 `/`，Windows 使用 `\`。
 ## path.resolve()
 
 用于解析绝对路径，返回一个解析后的绝对路径。
+
+文档：https://nodejs.org/api/path.html#pathresolvepaths
 
 假设当前目录是 `/Users/dev`
 
@@ -69,6 +73,8 @@ export default defineConfig({
 
 用于获取父级目录。
 
+文档：https://nodejs.org/api/path.html#pathdirnamepath
+
 ```typescript
 import path from "path";
 
@@ -100,6 +106,8 @@ console.log(dirname === __dirname);
 
 用于获取文件名。
 
+文档：https://nodejs.org/api/path.html#pathbasenamepath-suffix
+
 ```typescript
 import path from "path";
 // 场景：你有一个文件的完整路径
@@ -120,6 +128,8 @@ console.log(nameWithoutExt);
 ## path.extname()
 
 用于获取文件扩展名。
+
+文档：https://nodejs.org/api/path.html#pathextnamepath
 
 ```typescript
 import path from "path";
